@@ -1,7 +1,7 @@
 {
     "name": "Owleaf-Client",
     "preductname": "Owleaf Client",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Launcher oficial de Owleaf Studio",
     "main": "src/app.js",
     "author": {
@@ -39,6 +39,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/SoyNicoMx/BackGuards-Launcher.git"
+        "url": "git+https://github.com/SoyMRPandax/Owleaf-Launcher.git"
     }
 }
