@@ -2,10 +2,9 @@
 @import 'theme.css';
 
 body {
-    background-color: transparent; /* Cambiado a transparente */
+    background-color: var(--background);
     font-family: "Poppins";
     letter-spacing: 0px;
-    margin: 0; /* Asegurar que no haya margen alrededor del body */
 }
 
 img {
@@ -129,7 +128,6 @@ img {
     border-radius: 10px;
 }
 
-/* Ocultando completamente cualquier fondo no deseado */
-.background-update, .launcher-background, .overlay {
-    display: none !important;
+.background-update {
+    display: none;
 }
