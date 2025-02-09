@@ -6,7 +6,7 @@
 
 #maximize {
     display: none;
-  }
+}
 
 body {
     margin: 0;
@@ -15,6 +15,8 @@ body {
     color: var(--color);
     font-family: 'Poppins';
     font-weight: bolder;
+    background-color: transparent; /* Hace el fondo del body transparente */
+    background: none; /* Elimina cualquier fondo aplicado */
 }
 
 img {
@@ -147,6 +149,7 @@ input::-webkit-inner-spin-button {
     opacity: 0;
     z-index: 0;
     pointer-events: none;
+    background: transparent; /* Asegura que los paneles también sean transparentes */
 }
 
 .active {
