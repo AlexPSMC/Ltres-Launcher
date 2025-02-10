@@ -127,3 +127,9 @@ img {
     background-color: var(--element-color);
     border-radius: 10px;
 }
+
+/* Nueva sección para eliminar el fondo gris */
+body, .background-update, .splash-container {
+    background-color: transparent !important; /* Hacer transparente el fondo */
+    box-shadow: none !important; /* Eliminar posibles sombras */
+}
