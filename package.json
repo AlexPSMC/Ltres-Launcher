@@ -1,20 +1,20 @@
 {
-    "name": "Owleaf-Client",
-    "preductname": "Owleaf Client",
-    "version": "1.1.3",
-    "description": "Launcher oficial de Owleaf Studio",
+    "name": "ZeroDays-Client",
+    "preductname": "ZeroDays Client",
+    "version": "1.7.5",
+    "description": "Launcher oficial de Light Studio",
     "main": "src/app.js",
     "author": {
-        "name": "SoyNicoMx",
-        "email": "owleafstudio@outlook.com",
-        "url": "https://discord.gg/owleafstudio"
+        "name": "AlexPSMC",
+        "email": "soypancraft@gmail.com",
+        "url": "https://github.com/AlexPSMC"
     },
-    "url": "http://na21.holy.gg:19143/Owleaf",
+    "url": "http://172.96.172.240:25590/Launchers/ZeroMain",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
         "build": "node build.js --obf=true --build=platform",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png"
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/AlexPSMC/Ldos-Launcher/master/src/assets/images/icon.png"
     },
     "license": "CCANC",
     "nodemonConfig": {
@@ -40,6 +40,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/SoyMRPandax/Owleaf-Launcher.git"
+        "url": "git+https://github.com/AlexPSMC/Ldos-Launcher.git"
     }
 }

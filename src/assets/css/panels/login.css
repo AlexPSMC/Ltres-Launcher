@@ -13,16 +13,6 @@
     min-width: 40%;
 }
 
-.login-tabs2 {
-    border: 2px solid #292929;
-    background-color: #464646;
-    position: absolute;
-    padding: 15px;
-    border-radius: 15px;
-    text-align: center;
-    min-width: 40%;
-}
-
 .login-home,
 .login-offline,
 .login-AZauth,
@@ -31,75 +21,60 @@
 }
 
 .login-text2 {
-    font-size: 3rem;
+    font-size: 2.9rem;
+    position: relative;
+    top: -16px; /* mueve 20px hacia arriba */
 }
+
 .login-text {
-    display: inline;
     font-size: 3rem;
-
+    position: relative;
+    top: -2px; /* mueve 20px hacia arriba */
 }
 
-.login-highlight {
-    background: linear-gradient(90deg, #31c368, #6abe8a);
+.login-text3 {
+    font-size: 3rem;
+    position: relative;
+    top: -2px; /* mueve 20px hacia arriba */
+    background: linear-gradient(90deg, #e000ff, #00ffe0, #ffea00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
 }
 
+.login-text, .login-text3 {
+    display: inline-block;
+    margin-right: 10px; /* separarlos un poco */
+}
 
+.login-text-identificate {
+    font-size: 2.0rem;
+    position: relative;
+    top: -10px; /* mueve 20px hacia arriba */
+}
+
+/* Todos los botones (Conectar, Cancelar, Microsoft, Offline...) */
 .connect,
 .cancel {
-    background-color: #31c368;
-    color: var(--color);
-    border: solid 4px var(--element-color);
+    background: #ff48d6;        /* Rosa */
+    color: white;               /* Texto blanco */
+    border: solid 4px #ff48d6;  /* Borde rosa */
     border-radius: 10px;
     padding: 0.3rem 4rem;
     font-size: inherit;
     font-weight: bold;
     margin: 15px 10px;
+    transition: transform 0.3s ease-in-out; 
 }
 
-.button {
-    background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    border-radius: 10px;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .button2 {
-    background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
+.connect:hover,
+.cancel:hover {
+    transform: scale(1.1);
+    background: #da26aa;        /* Rosa fuerte */
+    border-color: #da26aa;
+}
 
-  .button1 {
-    background-color: rgba(255, 255, 255, 0); 
-    color: rgb(255, 255, 255); 
-    border: 2px solid #04AA6D;
-  }
-  
-  .button1:hover {
-    background-color: #04AA6D;
-    color: white;
-  }
 
 .input-login .email,
 .input-login .password,
@@ -111,4 +86,42 @@
     width: 50%;
     padding: 0.4rem 1rem;
     margin-top: 10px;
+}
+
+.login-select {
+    display: none;
+}
+
+/* SOLO los botones de Microsoft y Offline (pantalla principal) */
+.select-microsoft,
+.select-offline {
+    background: #ff48d6;             /* Rosa */
+    color: white;                    /* Texto blanco */
+    border-color: #ff48d6;           /* Borde rosa fuerte */
+}
+
+.select-microsoft:hover,
+.select-offline:hover {
+    transform: scale(1.1);
+    background: #da26aa;             /* Rosa más fuerte al pasar el mouse */
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out; 
+  }
+
+  html {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: hidden; /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+@keyframes fall{
+    to {
+      transform: translateY(105vh);
+    }
 }
