@@ -1,7 +1,7 @@
 {
     "name": "ZeroDays-Client",
     "preductname": "ZeroDays Client",
-    "version": "1.7.5",
+    "version": "1.7.6",
     "description": "Launcher oficial de Light Studio",
     "main": "src/app.js",
     "author": {
@@ -14,7 +14,7 @@
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
         "build": "node build.js --obf=true --build=platform",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/AlexPSMC/Ldos-Launcher/master/src/assets/images/icon.png"
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/AlexPSMC/Ltres-Launcher/master/src/assets/images/icon.png"
     },
     "license": "CCANC",
     "nodemonConfig": {
@@ -40,6 +40,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AlexPSMC/Ldos-Launcher.git"
+        "url": "git+https://github.com/AlexPSMC/Ltres-Launcher.git"
     }
 }
