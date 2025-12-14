@@ -90,6 +90,38 @@ class Home {
         return filtered;
     }
 
+setBackground(url) {
+    try {
+        const home = document.getElementById("home-page");
+
+        // Si no existe la página Home, no seguir
+        if (!home) return;
+
+        if (!url) {
+            home.style.backgroundImage = '';
+            this.currentBackground = null;
+            return;
+        }
+
+        const img = new Image();
+        img.onload = () => {
+            home.style.backgroundImage = `url('${url}')`;
+            home.style.backgroundSize = "cover";
+            home.style.backgroundPosition = "center";
+            this.currentBackground = url;
+        };
+        img.onerror = () => {
+            console.warn('No se pudo cargar la imagen de fondo:', url);
+            home.style.backgroundImage = '';
+            this.currentBackground = null;
+        };
+        img.src = url;
+
+    } catch (e) {
+        console.warn('Error estableciendo fondo:', e);
+    }
+}
+    
     async news() {
         let newsElement = document.querySelector('.news-list');
         if (!newsElement) {

@@ -1,70 +1,78 @@
-<div class="container">
-    <div class="status-server">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <img class="server-status-icon" src="assets/images/icon.png">
-        <div class="server-status-infos">
-            <div class="server-status-name">Hexa Studios</div>
-            <div></div>
-        </div>
-        <div class="status-player-count">
-            <div class="player-count">0</div>
-        </div>
-    </div>
-    <div class="header"></div>
-    <video class="video-background" autoplay loop muted playsinline>
-        <source src="assets/images/fondo.mp4" type="video/mp4">
-    </video>
-    <img src="" alt="" class="" width="">
-    <div class="home-bottom">
-        <div class="social-tab">
-            <!-- Instance avatars: circular clickable images that switch instances -->
-            <div class="instance-avatars content-scroll"></div>
-        </div>
-    </div>
+<div id="home-page" class="page">
 
-    <div class="sidebar">
-        <div class="instance-select"><h1>+</h1></div>
-        <div class="settings-btn icon-settings"></div>
-        <div class="player-options">
-            <div class="player-head"></div>
-        </div>
-    </div>
-
-    <div class="instance-popup">
-        <div class="instances-tab">
-            <div class="close-popup icon-close"></div>
-            <p>Selecciona una instancia...</p>
-            
-            <div class="instances-List"></div>
-            
-            <!-- Input para códigos de instancias protegidas -->
-            <div class="code-unlock-section">
-                <div class="code-unlock-divider"></div>
-                <p class="code-unlock-label"></p>
-                <div class="code-unlock-input-container">
-                </div>
-                <div class="code-unlock-message"></div>
+    <div class="container">
+        <div class="status-server">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <img class="server-status-icon" src="assets/images/icon.png">
+            <div class="server-status-infos">
+                <div class="server-status-name">Horizon Studios</div>
+                <div></div>
+            </div>
+            <div class="status-player-count">
+                <div class="player-count">0</div>
             </div>
         </div>
+
+        <div class="header"></div>
+
+        <video class="video-background" autoplay loop muted playsinline>
+            <source src="assets/images/fondo.mp4" type="video/mp4">
+        </video>
+
+        <img src="" alt="" class="" width="">
+
+        <div class="home-bottom">
+            <div class="social-tab">
+                <div class="instance-avatars content-scroll"></div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="instance-select"><h1>+</h1></div>
+            <div class="settings-btn icon-settings"></div>
+            <div class="player-options">
+                <div class="player-head"></div>
+            </div>
+        </div>
+
+        <div class="instance-popup">
+            <div class="instances-tab">
+                <div class="close-popup icon-close"></div>
+                <p>Selecciona una instancia...</p>
+                
+                <div class="instances-List"></div>
+
+                <div class="code-unlock-section">
+                    <div class="code-unlock-divider"></div>
+                    <p class="code-unlock-label"></p>
+                    <div class="code-unlock-input-container"></div>
+                    <div class="code-unlock-message"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="play-elements">
+            <div class="play-instance">
+                <button class="play-btn">Play</button>
+            </div>
+
+            <div class="info-starting-game">
+                <div class="starting-box">
+
+                    <div class="starting-left">
+                        <div class="starting-title">INICIANDO MINECRAFT...</div>
+                        <div class="info-starting-game-text">Conectando...</div>
+                        <progress value="0" max="0" class="progress-bar"></progress>
+                    </div>
+
+                    <div class="starting-right">
+                        <img class="starting-icon-big" src="assets/images/icon.png" alt="Loading Icon">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="play-elements">
-        <div class="play-instance">
-            <button class="play-btn">Play</button>
-        </div>
-        <div class="info-starting-game">
-    <!-- 🔹 NUEVO RECUADRO DE INICIO 🔹 -->
-    <div class="starting-box">
-        <!-- Columna izquierda: texto + progreso -->
-        <div class="starting-left">
-            <div class="starting-title">INICIANDO MINECRAFT...</div>
-            <div class="info-starting-game-text">Conectando...</div>
-            <progress value="0" max="0" class="progress-bar"></progress>
-        </div>
-
-        <!-- Columna derecha: imagen grande -->
-        <div class="starting-right">
-            <img class="starting-icon-big" src="assets/images/icon.png" alt="Loading Icon">
-        </div>
-    </div>
 </div>

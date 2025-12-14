@@ -13,7 +13,7 @@ const RPC = require('discord-rpc');
 const UpdateWindow = require("./assets/js/windows/updateWindow.js");
 const MainWindow = require("./assets/js/windows/mainWindow.js");
 
-const CLIENT_ID = '1443406019740041257';
+const CLIENT_ID = '1444191237614866432';
 RPC.register(CLIENT_ID);
 
 const rpc = new RPC.Client({ transport: 'ipc' });
@@ -34,7 +34,7 @@ async function setActivity(instanceName = currentInstance, panelName = currentPa
     rpc.setActivity({
         startTimestamp: new Date(),
         largeImageKey: 'launcher_logo',
-        largeImageText: 'ZeroDays Client',
+        largeImageText: 'Horizon Client',
         smallImageKey: 'icon',
         smallImageText: 'Preparándome para jugar',
         details: details,

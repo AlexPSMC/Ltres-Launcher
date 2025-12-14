@@ -106,6 +106,10 @@
     background: #da26aa;             /* Rosa más fuerte al pasar el mouse */
 }
 
+#login-page {
+    background: none !important;
+}
+
 .fade-out {
     opacity: 0;
     transition: opacity 0.5s ease-out; 

@@ -1,8 +1,8 @@
 {
-    "name": "ZeroDays-Client",
-    "preductname": "ZeroDays Client",
-    "version": "1.7.6",
-    "description": "Launcher oficial de Light Studio",
+    "name": "Horizon-Client",
+    "preductname": "Horizon Client",
+    "version": "1.8.6",
+    "description": "Launcher oficial de Horizon Studio",
     "main": "src/app.js",
     "author": {
         "name": "AlexPSMC",
